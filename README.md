@@ -8,13 +8,13 @@ The Challenge
 Clone this repository to your local and get it running by using
 `npm start`
 
-You need to write a React SPA that allows the user to push a button to "connect".
+You need to write a React SPA that connects the user to the websocket on load.
 
 Once connected they should be able to send a message through the websocket and the reply should be printed on their screen.
 
 You should keep a running log of the sent and received messages.
 
-There should be a disconnect button that sets them back to the original state of the app and clears all the messages!
+Please provide a nice chat interface! If you have any extension features you want to add go ahead :D
 
 Please commit your code to github and send us the link when you are ready.
 
