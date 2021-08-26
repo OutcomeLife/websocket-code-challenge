@@ -1,0 +1,24 @@
+{
+  "name": "websocket-code-challenge",
+  "version": "1.0.0",
+  "description": "Coding Challenge for Websockets",
+  "main": "./src/index.mjs",
+  "scripts": {
+    "start": "nodemon ./src/index.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OutcomeLife/websocket-code-challenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OutcomeLife/websocket-code-challenge/issues"
+  },
+  "homepage": "https://github.com/OutcomeLife/websocket-code-challenge#readme",
+  "dependencies": {
+    "ws": "^8.2.0"
+  }
+}
