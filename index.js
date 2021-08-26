@@ -1,16 +1,6 @@
-const express = require("express");
-const { Server } = require("ws");
+const { WebSocketServer } = require("ws");
 
-const PORT = process.env.PORT || 3000;
-const INDEX = "/index.html";
-
-const server = express();
-
-server
-  .use((req, res) => res.sendFile(INDEX, { root: __dirname }))
-  .listen(PORT, () => console.log(`Listening on ${PORT}`));
-
-const wss = new Server({ server });
+const wss = new WebSocketServer({ port: 8080 });
 
 wss.on("connection", (ws) => {
   ws.send("connected");
@@ -28,3 +18,5 @@ wss.on("connection", (ws) => {
     ws.send(reversed);
   });
 });
+
+console.log("listening on port: 8080");
